@@ -1,7 +1,15 @@
 package com.ejercicio.videoclub.domain.entity;
 
 public abstract class Pelicula {
-
     private String titulo;
-    protected abstract int calcularPuntos(int dias);
+
+    public Pelicula(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public abstract int calcularPuntosFidelizacion(int dias);
+
+    public String getTitulo() {
+        return titulo;
+    }
 }

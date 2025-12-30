@@ -1,13 +1,14 @@
 package com.ejercicio.videoclub.domain.entity;
 
-public abstract class Pelicula {
+public class Pelicula {
     private String titulo;
+    private TipoPelicula tipoPelicula;
 
-    public Pelicula(String titulo) {
+
+    public Pelicula(String titulo, TipoPelicula tipoPelicula) {
         this.titulo = titulo;
+        this.tipoPelicula = tipoPelicula;
     }
-
-    public abstract int calcularPuntosFidelizacion(int dias);
 
     public String getTitulo() {
         return titulo;

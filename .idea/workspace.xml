@@ -2,17 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1a5387d0-4248-48cc-97b4-10c1cc5c3791" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/TipoPelicula.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/Alquiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/Alquiler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/Cliente.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/Cliente.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/VideoClub.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/VideoClub.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Alquiler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Cliente.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Pelicula.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/PeliculaNormal.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/PeliculaNueva.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/PeliculaVieja.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/TipoPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/TipoPelicula.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/VideoClub.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/VideoClub.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/factory/PeliculaFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/factory/PeliculaFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/factory/PeliculaNormalFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/factory/PeliculaNuevaFactory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/factory/PeliculaViejaFactory.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +22,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="Interface" />
+        <option value="Record" />
       </list>
     </option>
   </component>

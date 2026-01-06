@@ -6,6 +6,7 @@ import com.ejercicio.videoclub.domain.entity.TipoPelicula;
 public class PeliculaFactory {
 
     public static Pelicula crearPelicula(String titulo, TipoPelicula tipoPelicula){
+
         return new Pelicula(titulo,tipoPelicula);
     }
 }

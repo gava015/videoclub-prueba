@@ -13,4 +13,8 @@ public class Pelicula {
     public String getTitulo() {
         return titulo;
     }
+
+    public TipoPelicula getTipoPelicula() {
+        return tipoPelicula;
+    }
 }

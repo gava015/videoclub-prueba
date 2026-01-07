@@ -6,5 +6,4 @@ import com.ejercicio.videoclub.domain.entity.Pelicula;
 public interface PeliculaUseCase {
 
     Pelicula crearPelicula(PeliculaRequest peliculaRequest);
-
 }

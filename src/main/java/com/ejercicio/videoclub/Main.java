@@ -1,6 +1,5 @@
 package com.ejercicio.videoclub;
 
-import com.ejercicio.videoclub.adapter.controller.AlquilerController;
 import com.ejercicio.videoclub.adapter.controller.PeliculaController;
 import com.ejercicio.videoclub.adapter.dto.PeliculaRequest;
 import com.ejercicio.videoclub.adapter.dto.PeliculaResponse;

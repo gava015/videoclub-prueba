@@ -7,7 +7,6 @@ import com.ejercicio.videoclub.domain.entity.Pelicula;
 public class PeliculaService implements PeliculaUseCase {
     @Override
     public Pelicula crearPelicula(PeliculaRequest peliculaRequest) {
-        // TODO: Terminar la logica asociado a la creación de peliculas (validaciones de datos, respuestas)
 
         if (peliculaRequest.titulo() == null || peliculaRequest.titulo().isBlank()){
             throw new IllegalArgumentException("El titulo no puedee estar vacío");
@@ -17,7 +16,7 @@ public class PeliculaService implements PeliculaUseCase {
             throw new IllegalArgumentException("Debe seleccionar un tipo de pelicula");
         }
 
-        Pelicula pelicula = new Pelicula(peliculaRequest.titulo(),peliculaRequest.tipoPelicula());
+        Pelicula pelicula = new Pelicula(peliculaRequest.titulo(),peliculaRequest.tipoPelicula(), peliculaRequest.peliculaId());
 
         return pelicula;
     }

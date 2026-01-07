@@ -15,9 +15,8 @@ public class PeliculaController {
 
     public PeliculaResponse crearPelicula(PeliculaRequest peliculaRequest) {
 
-        Pelicula pelicula =  peliculaUseCase.crearPelicula(peliculaRequest);
-
-        PeliculaResponse peliculaResponse = new PeliculaResponse(pelicula.getTitulo(),pelicula.getTipoPelicula());
+        Pelicula pelicula = peliculaUseCase.crearPelicula(peliculaRequest);
+        PeliculaResponse peliculaResponse = new PeliculaResponse(pelicula.getPeliculaId(),pelicula.getTitulo(), pelicula.getTipoPelicula());
 
         return peliculaResponse;
     }

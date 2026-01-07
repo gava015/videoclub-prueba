@@ -1,33 +1,27 @@
 package com.ejercicio.videoclub;
 
-import com.ejercicio.videoclub.domain.entity.Alquiler;
-import com.ejercicio.videoclub.domain.entity.Cliente;
-import com.ejercicio.videoclub.domain.entity.Pelicula;
+import com.ejercicio.videoclub.adapter.controller.AlquilerController;
+import com.ejercicio.videoclub.adapter.controller.PeliculaController;
+import com.ejercicio.videoclub.adapter.dto.PeliculaRequest;
+import com.ejercicio.videoclub.adapter.dto.PeliculaResponse;
+import com.ejercicio.videoclub.adapter.gateway.PeliculaUseCase;
 import com.ejercicio.videoclub.domain.entity.TipoPelicula;
-import com.ejercicio.videoclub.domain.factory.PeliculaFactory;
+import com.ejercicio.videoclub.domain.usecase.PeliculaService;
+
 
 public class Main {
     public static void main(String[] args) {
 
+        PeliculaUseCase peliculaUseCase = new PeliculaService();
 
-        Pelicula pelicula = PeliculaFactory.crearPelicula(
-                "Matrix",
-                TipoPelicula.NUEVA
-        );
+        PeliculaController controller = new PeliculaController(peliculaUseCase);
 
+        PeliculaRequest request =
+                new PeliculaRequest("Zootopia", TipoPelicula.NUEVA);
 
-        Cliente cliente = new Cliente("Valentina");
+        PeliculaResponse response =
+                controller.crearPelicula(request);
 
-
-        Alquiler alquiler = new Alquiler(cliente, pelicula, 3);
-
-        //int precio = alquiler.calcularPrecio();
-
-        System.out.println("Cliente: " + cliente.getNombre());
-        System.out.println("Película: " + pelicula.getTitulo());
-        System.out.println("Tipo: " + pelicula.getTipoPelicula());
-        System.out.println("Días: " + alquiler.getDias());
-        //System.out.println("Precio total: $" + precio);
-
+        System.out.println(response);
     }
 }

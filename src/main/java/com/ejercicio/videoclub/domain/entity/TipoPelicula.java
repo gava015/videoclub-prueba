@@ -1,31 +1,19 @@
 package com.ejercicio.videoclub.domain.entity;
 
+import java.util.function.Predicate;
+
 public enum TipoPelicula {
-    NUEVA,
-    NORMAL,
-    VIEJA;
+    NUEVA(2),
+    NORMAL(1),
+    VIEJA(1);
 
-    public int calcularPrecio(int dias) {
-        int precio = 0;
-        switch (this) {
-            case NUEVA:
-                return dias * 3000;
+    private final int puntosFidelizacion;
 
-            case NORMAL:
-                precio = 3 * 3000;
-                if (dias > 3) {
-                    precio += (dias - 3) * 3000;;
-                }
-                return precio;
+    TipoPelicula(int puntosFidelizacion) {
+        this.puntosFidelizacion = puntosFidelizacion;
+    }
 
-            case VIEJA:
-                precio = 5 * 3000;
-                if (dias > 5) {
-                    precio += (dias - 5) * 3000;
-                }
-                return precio;
-
-        }
-        return precio;
+    public int getPuntosFidelizacion() {
+        return puntosFidelizacion;
     }
 }

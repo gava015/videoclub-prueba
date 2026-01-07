@@ -6,6 +6,7 @@ public class Cliente {
 
     public Cliente(String nombre) {
         this.nombre = nombre;
+        this.puntosFidelizacion = 0;
     }
 
     public String getNombre() {

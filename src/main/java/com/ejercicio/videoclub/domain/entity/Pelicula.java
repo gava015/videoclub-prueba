@@ -17,4 +17,12 @@ public class Pelicula {
     public TipoPelicula getTipoPelicula() {
         return tipoPelicula;
     }
+
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
+    }
+
+    public void setTipoPelicula(TipoPelicula tipoPelicula) {
+        this.tipoPelicula = tipoPelicula;
+    }
 }

@@ -3,6 +3,7 @@ package com.ejercicio.videoclub.adapter.controller;
 import com.ejercicio.videoclub.adapter.dto.PeliculaRequest;
 import com.ejercicio.videoclub.adapter.dto.PeliculaResponse;
 import com.ejercicio.videoclub.adapter.gateway.PeliculaUseCase;
+import com.ejercicio.videoclub.domain.entity.Pelicula;
 
 public class PeliculaController {
 
@@ -13,10 +14,11 @@ public class PeliculaController {
     }
 
     public PeliculaResponse crearPelicula(PeliculaRequest peliculaRequest) {
-        peliculaUseCase.crearPelicula(peliculaRequest);
 
-        // TODO: Ojo, aquí deberiamos tener un try/catch
+        Pelicula pelicula =  peliculaUseCase.crearPelicula(peliculaRequest);
 
-        return new PeliculaResponse();
+        PeliculaResponse peliculaResponse = new PeliculaResponse(pelicula.getTitulo(),pelicula.getTipoPelicula());
+
+        return peliculaResponse;
     }
 }

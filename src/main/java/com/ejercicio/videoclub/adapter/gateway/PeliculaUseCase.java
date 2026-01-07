@@ -7,5 +7,4 @@ public interface PeliculaUseCase {
 
     Pelicula crearPelicula(PeliculaRequest peliculaRequest);
 
-
 }

@@ -8,6 +8,19 @@ public class PeliculaService implements PeliculaUseCase {
     @Override
     public Pelicula crearPelicula(PeliculaRequest peliculaRequest) {
         // TODO: Terminar la logica asociado a la creación de peliculas (validaciones de datos, respuestas)
-        return null;
+
+        if (peliculaRequest.titulo() == null || peliculaRequest.titulo().isBlank()){
+            throw new IllegalArgumentException("El titulo no puedee estar vacío");
+        }
+
+        if(peliculaRequest.tipoPelicula() == null){
+            throw new IllegalArgumentException("Debe seleccionar un tipo de pelicula");
+        }
+
+        Pelicula pelicula = new Pelicula(peliculaRequest.titulo(),peliculaRequest.tipoPelicula());
+
+        return pelicula;
     }
 }
+
+

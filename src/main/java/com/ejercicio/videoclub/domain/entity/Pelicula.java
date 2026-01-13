@@ -1,13 +1,15 @@
 package com.ejercicio.videoclub.domain.entity;
 
+import java.util.UUID;
+
 public class Pelicula {
-    private int peliculaId;
+    private UUID peliculaId;
     private String titulo;
     private TipoPelicula tipoPelicula;
 
-    public Pelicula(String titulo, TipoPelicula tipoPelicula, int peliculaId) {
-        this.titulo = titulo;
+    public Pelicula(UUID peliculaId, String titulo, TipoPelicula tipoPelicula) {
         this.peliculaId = peliculaId;
+        this.titulo = titulo;
         this.tipoPelicula = tipoPelicula;
     }
 
@@ -27,11 +29,11 @@ public class Pelicula {
         this.tipoPelicula = tipoPelicula;
     }
 
-    public int getPeliculaId() {
+    public UUID getPeliculaId() {
         return peliculaId;
     }
 
-    public void setPeliculaId(int peliculaId) {
+    public void setPeliculaId(UUID peliculaId) {
         this.peliculaId = peliculaId;
     }
 }

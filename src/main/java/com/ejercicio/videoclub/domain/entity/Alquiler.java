@@ -1,13 +1,10 @@
 package com.ejercicio.videoclub.domain.entity;
-
-import java.util.ArrayList;
 import java.util.List;
 
 public class Alquiler {
     private Cliente cliente;
     private List<Pelicula> listaPeliculas;
     private int alquilerDias;
-
 
     public Alquiler(Cliente cliente, List<Pelicula> listaPeliculas, int alquilerDias) {
         this.cliente = cliente;
@@ -47,7 +44,6 @@ public class Alquiler {
 
         for(Pelicula pelicula: listaPeliculas){
           totalPuntos += pelicula.getTipoPelicula().getPuntosFidelizacion();
-
         }
         cliente.setPuntosFidelizacion(totalPuntos);
     }

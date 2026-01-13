@@ -1,13 +1,13 @@
 package com.ejercicio.videoclub.domain.entity;
 
 public class Cliente {
-    private String nombre;
     private int clienteId;
+    private String nombre;
     private int puntosFidelizacion;
 
     public Cliente(String nombre,int clienteId) {
-        this.nombre = nombre;
         this.clienteId = clienteId;
+        this.nombre = nombre;
         this.puntosFidelizacion = 0;
     }
 
@@ -29,5 +29,9 @@ public class Cliente {
 
     public void setPuntosFidelizacion(int puntosFidelizacion) {
         this.puntosFidelizacion = puntosFidelizacion;
+    }
+
+    public int getPuntosFidelizacion() {
+        return puntosFidelizacion;
     }
 }

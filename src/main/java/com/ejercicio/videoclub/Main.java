@@ -74,7 +74,7 @@ public class Main {
             return;
         }
 
-        Cliente cliente = clientes.get(0); // simple para el ejercicio
+        Cliente cliente = clientes.get(0);
 
         System.out.print("Días de alquiler: ");
         int dias = Integer.parseInt(consola.nextLine());

@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1a5387d0-4248-48cc-97b4-10c1cc5c3791" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/Alquiler$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/Alquiler$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/Alquiler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/entity/Alquiler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/usecase/AlquilerService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/usecase/AlquilerService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/usecase/ClienteService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/usecase/ClienteService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/usecase/PeliculaService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/videoclub/com/ejercicio/videoclub/domain/usecase/PeliculaService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/usecase/AlquilerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/usecase/AlquilerService.java" afterDir="false" />
-    </list>
+    <list default="true" id="1a5387d0-4248-48cc-97b4-10c1cc5c3791" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

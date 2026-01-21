@@ -1,15 +1,15 @@
 package com.ejercicio.videoclub;
 
-import com.ejercicio.videoclub.adapter.controller.AlquilerController;
-import com.ejercicio.videoclub.adapter.controller.PeliculaController;
+import com.ejercicio.videoclub.adapter.controller.RentalController;
+import com.ejercicio.videoclub.adapter.controller.MovieController;
 import com.ejercicio.videoclub.adapter.dto.*;
-import com.ejercicio.videoclub.adapter.gateway.AlquilerUseCase;
-import com.ejercicio.videoclub.adapter.gateway.PeliculaUseCase;
-import com.ejercicio.videoclub.domain.entity.Cliente;
-import com.ejercicio.videoclub.domain.entity.Pelicula;
-import com.ejercicio.videoclub.domain.entity.TipoPelicula;
-import com.ejercicio.videoclub.domain.usecase.AlquilerService;
-import com.ejercicio.videoclub.domain.usecase.PeliculaService;
+import com.ejercicio.videoclub.adapter.gateway.RentalUseCase;
+import com.ejercicio.videoclub.adapter.gateway.MovieUseCase;
+import com.ejercicio.videoclub.domain.entity.User;
+import com.ejercicio.videoclub.domain.entity.Movie;
+import com.ejercicio.videoclub.domain.entity.MovieType;
+import com.ejercicio.videoclub.domain.usecase.RentalService;
+import com.ejercicio.videoclub.domain.usecase.MovieService;
 
 import java.util.*;
 
@@ -17,18 +17,18 @@ public class Main {
 
     private final Scanner consola = new Scanner(System.in);
 
-    private final PeliculaController peliculaController;
-    private final AlquilerController alquilerController;
+    private final MovieController movieController;
+    private final RentalController rentalController;
 
-    private final List<Pelicula> peliculas = new ArrayList<>();
-    private final List<Cliente> clientes = new ArrayList<>();
+    private final List<Movie> movies = new ArrayList<>();
+    private final List<User> users = new ArrayList<>();
 
     public Main() {
-        PeliculaUseCase peliculaUseCase = new PeliculaService();
-        AlquilerUseCase alquilerUseCase = new AlquilerService();
+        MovieUseCase movieUseCase = new MovieService();
+        RentalUseCase rentalUseCase = new RentalService();
 
-        this.peliculaController = new PeliculaController(peliculaUseCase);
-        this.alquilerController = new AlquilerController(alquilerUseCase);
+        this.movieController = new MovieController(movieUseCase);
+        this.rentalController = new RentalController(rentalUseCase);
     }
 
     private void mostrarMenu() {
@@ -45,48 +45,48 @@ public class Main {
         String titulo = consola.nextLine();
 
         System.out.print("Tipo (NUEVA / NORMAL / VIEJA): ");
-        TipoPelicula tipo = TipoPelicula.valueOf(consola.nextLine().toUpperCase());
+        MovieType tipo = MovieType.valueOf(consola.nextLine().toUpperCase());
 
-        PeliculaRequest request = new PeliculaRequest(titulo, tipo);
-        PeliculaResponse response = peliculaController.crearPelicula(request);
+        MovieRequest request = new MovieRequest(titulo, tipo);
+        MovieResponse response = movieController.crearPelicula(request);
 
-        peliculas.add(new Pelicula(UUID.randomUUID(), titulo, tipo));
+        movies.add(new Movie(UUID.randomUUID(), titulo, tipo));
 
         System.out.println("Película creada: " + response.titulo());
     }
 
     private void crearCliente() {
         System.out.print("Nombre del cliente: ");
-        String nombre = consola.nextLine();
+        String name = consola.nextLine();
 
         System.out.print("ID del cliente (int): ");
-        int id = Integer.parseInt(consola.nextLine());
+        int userId = Integer.parseInt(consola.nextLine());
 
-        Cliente cliente = new Cliente(nombre, id);
-        clientes.add(cliente);
+        User user = new User(userId,name);
+        users.add(user);
 
         System.out.println("Cliente creado correctamente");
     }
 
     private void crearAlquiler() {
-        if (clientes.isEmpty() || peliculas.isEmpty()) {
+        if (users.isEmpty() || movies.isEmpty()) {
             System.out.println("Debe existir al menos un cliente y una película");
             return;
         }
 
-        Cliente cliente = clientes.get(0);
+        User user = users.get(0);
 
         System.out.print("Días de alquiler: ");
         int dias = Integer.parseInt(consola.nextLine());
 
-        AlquilerRequest request =
-                new AlquilerRequest(cliente, peliculas, dias);
+        RentalRequest request =
+                new RentalRequest(user, movies, dias);
 
-        AlquilerResponse response = alquilerController.crearAlquiler(request);
+        RentalResponse response = rentalController.crearAlquiler(request);
 
         System.out.println("Total a pagar: " + response.precio());
         System.out.println("Puntos obtenidos: " +
-                response.cliente().getPuntosFidelizacion());
+                response.user().getLoyaltyPoints());
     }
 
     private void iniciarMenu() {

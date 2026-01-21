@@ -1,9 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1a5387d0-4248-48cc-97b4-10c1cc5c3791" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/MovieRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/MovieResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/RentalRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/RentalResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/controller/AlquilerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/controller/RentalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/controller/ClienteController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/controller/PeliculaController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/AlquilerRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/AlquilerResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/ClienteRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/UserRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/ClienteResponse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/UserResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/PeliculaRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/dto/PeliculaResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/gateway/AlquilerUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/gateway/RentalUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/gateway/ClienteUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/gateway/UserUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/gateway/PeliculaUseCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/adapter/gateway/MovieUseCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Alquiler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Rental.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Pelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/Movie.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/TipoPelicula.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/entity/MovieType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/repository/VideoClubData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/repository/VideoClubData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/usecase/AlquilerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/usecase/RentalService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/usecase/ClienteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/usecase/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/usecase/PeliculaService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ejercicio/videoclub/domain/usecase/MovieService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,19 +55,27 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="37V0CfCjWPHdSpcqD94AxLc29mq" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ejercicio.videoclub.Main" />

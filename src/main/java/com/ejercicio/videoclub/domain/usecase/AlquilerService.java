@@ -4,8 +4,12 @@ import com.ejercicio.videoclub.adapter.dto.AlquilerRequest;
 import com.ejercicio.videoclub.adapter.dto.AlquilerResponse;
 import com.ejercicio.videoclub.adapter.gateway.AlquilerUseCase;
 import com.ejercicio.videoclub.domain.entity.Alquiler;
+import com.ejercicio.videoclub.domain.repository.VideoClubData;
 
 public class AlquilerService implements AlquilerUseCase {
+
+    private final VideoClubData data = VideoClubData.getInstance();
+
     @Override
     public AlquilerResponse crearAlquiler(AlquilerRequest alquilerRequest) {
 
@@ -30,8 +34,7 @@ public class AlquilerService implements AlquilerUseCase {
                 alquiler.calcularPrecioAlquiler());
         alquiler.asignarPuntosFidelizacion();
 
-        //TODO: Falta almacenar la información en el listado de la clase singleton
-
+        data.getAlquileres().add(alquiler);
         return alquilerResponse;
     }
 }

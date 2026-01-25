@@ -52,7 +52,7 @@ public class Main {
 
         movies.add(new Movie(UUID.randomUUID(), titulo, tipo));
 
-        System.out.println("Película creada: " + response.titulo());
+        System.out.println("Película creada: " + response.title());
     }
 
     private void crearCliente() {
@@ -82,9 +82,9 @@ public class Main {
         RentalRequest request =
                 new RentalRequest(user, movies, dias);
 
-        RentalResponse response = rentalController.crearAlquiler(request);
+        RentalResponse response = rentalController.createRental(request);
 
-        System.out.println("Total a pagar: " + response.precio());
+        System.out.println("Total a pagar: " + response.price());
         System.out.println("Puntos obtenidos: " +
                 response.user().getLoyaltyPoints());
     }

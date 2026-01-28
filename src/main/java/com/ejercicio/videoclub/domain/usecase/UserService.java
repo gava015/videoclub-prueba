@@ -7,13 +7,12 @@ import com.ejercicio.videoclub.domain.entity.User;
 public class UserService implements UserUseCase {
     @Override
     public User createUser(UserRequest userRequest) {
+        if(userRequest == null) {
+            throw new IllegalArgumentException("User must not be null");
+        }
 
         if (userRequest.name() == null || userRequest.name().isBlank()) {
             throw new IllegalArgumentException("Name is required");
-        }
-
-        if(userRequest == null) {
-            throw new IllegalArgumentException("User must not be null");
         }
 
         if(userRequest.userId() <= 0) {

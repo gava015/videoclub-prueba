@@ -15,6 +15,6 @@ public class RentalController {
 
         RentalResponse rentalResponse = rentalUseCase.createRental(rentalRequest);
         return rentalResponse;
-        }
     }
+}
 

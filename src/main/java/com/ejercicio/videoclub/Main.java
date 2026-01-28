@@ -48,7 +48,7 @@ public class Main {
         MovieType tipo = MovieType.valueOf(consola.nextLine().toUpperCase());
 
         MovieRequest request = new MovieRequest(titulo, tipo);
-        MovieResponse response = movieController.crearPelicula(request);
+        MovieResponse response = movieController.createMovie(request);
 
         movies.add(new Movie(UUID.randomUUID(), titulo, tipo));
 

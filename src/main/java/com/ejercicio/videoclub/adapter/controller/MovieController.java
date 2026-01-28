@@ -11,7 +11,7 @@ public class MovieController {
         this.movieUseCase = movieUseCase;
     }
 
-    public MovieResponse crearPelicula(MovieRequest movieRequest) {
+    public MovieResponse createMovie(MovieRequest movieRequest) {
 
         Movie movie = movieUseCase.createMovie(movieRequest);
         MovieResponse movieResponse = new MovieResponse(movie.getMovieId(), movie.getTitle(), movie.getMovieType());
